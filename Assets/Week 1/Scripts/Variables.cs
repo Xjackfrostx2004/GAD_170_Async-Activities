@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class Variables : MonoBehaviour
 {
+    #region Code neatness tutorial
     // this is a single line comment
     /* this is a multi line comment 
      * and i can keep writing here 
@@ -21,7 +22,20 @@ public class Variables : MonoBehaviour
 
     [Space(20)] // space creates space in the unity inspector based on the number put in 
     public bool myThirdBool = false;
+    #endregion
+
     #region all of my unity functions
+
+    #region Data Types
+    public int myFirstInt = 1; // an int holds whole numbers only
+    public float myHeight = 166.5f; // a float holds decimal number values
+    public double NepalGp = 180.87; // a double doubles the float value
+    public string myFirstName = "Sandesh"; // a string holds words only
+    public char myInitial = 'S'; // a char holds a single character only
+    public bool isWearingAWatch = false; // a bool holds true or false
+
+
+    #endregion
 
     // Start is called before the first frame update
     void Start()
